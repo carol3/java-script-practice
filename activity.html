@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+ <meta charset="utf-8">
+    <title>introduction to javascript</title>   
+   
+    </head>
+    
+<body>
+    
+<script scr="../js/course.js" >
+var contacts ={
+       fullName: function() {
+           return this.firstName + " " + this.lastName;
+       }
+   }
+   
+   var contacts1 = {
+       firstName: "john",
+       lastName: "Doe",
+   }
+   
+   var contacts2 = {
+       firstName: "Mary",
+       lastName: "Doe",
+       
+   }
+     describe: function (){
+       var decription =" Firs Name " + this.firstName + " Last Name" + this.lastName + ".";
+       return decription;
+       
+   }
+        };
+    console.log(contacts1.describe());
+    
+
+</script>  
+    
+</body>
+
+
+</html>

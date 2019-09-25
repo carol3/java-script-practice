@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+ <meta charset="utf-8">
+    <title>introduction to javascript</title>   
+   
+    </head>
+    
+<body>
+    
+<script scr="../js/course.js" >
+  <!--  //creating an object in js    -->
+<!--object name is Cake-->
+<script scr="../js/course.js" >
+    var cake = {
+        flavor: "vanila",
+        layers: "2",
+        price: "$10",
+        occasion: "birthday",
+    };
+console.log("The " + cake.occasion + "cake has a" + cake.flavor + "flavor, " + cake.levels + "layers, and costs" + cake.price + " . ");
+    
+  //the cake is actually for a wedding 
+cake.occasion = "wedding";
+    
+// its number of layers and price both go up
+
+cake.layers = cake.layers + 8;
+cake.price = "$50";
+
+console.log("The " + cake.occasion + "cake has a " + cake.flavor + "flavor, " + cake.layers + "layers, and costs " + cake.price + " . ");
+
+      
+    
+ //Adding a method to an object   
+    
+    
+
+//describe a cake
+ function describe(cake){
+     var description = "The  " + cake.occasion + "cake has a " + cake.flavor + "flavor, " + cake.layers + "layers, and costs"  + cake.price + ".";
+     return description;
+ }  
+console.log(describe(cake));
+</script>  
+    
+</body>
+
+
+</html>
